@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+    <link rel="stylesheet" href="game.css"> 
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Game Tebak Angka 🎰</h1>
+        <p>Saya sudah memilih sebuah angka rahasia antara **1 sampai 100**. Coba tebak angka itu!</p>
+        
+        <div class="game-area">
+            <label for="guessField">Masukkan Tebakan Anda:</label>
+            <input type="number" id="guessField" class="guessField" min="1" max="100">
+            <button type="submit" class="guessSubmit">Tebak</button>
+        </div>
+
+        <div class="result-area">
+            <p class="guesses">Tebakan Sebelumnya: </p>
+            <p class="lastResult">Hasil: </p>
+            <p class="lowOrHi"></p>
+        </div>
+
+        <button class="resetButton" style="display:none;">Mulai Game Baru</button>
+        
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
